@@ -6,5 +6,5 @@ nlp = spacy.load('en_core_web_md')
 
 # Gerar arquivo de treino baseado nos dados do DOCCANO
 
-generate_training_file(filepath="G:\\Meu Drive\\TCC\\TCC II - Everson Leonardi\\Projeto\\DOCCANO Exported Data\\Fadmin.jsonl",outdir="G:\\Meu Drive\\TCC\\TCC II - Everson Leonardi\\Projeto\\DOCCANO Exported Data\\")
+generate_training_file(filepath="G:\\Meu Drive\\TCC\\TCC II - Everson Leonardi\\Projeto\\DOCCANO Exported Data\\admin.jsonl",outdir="G:\\Meu Drive\\TCC\\TCC II - Everson Leonardi\\Projeto\\DOCCANO Exported Data\\")
 
