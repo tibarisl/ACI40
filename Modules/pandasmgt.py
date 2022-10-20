@@ -1,7 +1,5 @@
 import pandas as pd
 import datetime
-from numpy.distutils.misc_util import _commandline_dep_string
-
 
 def create_df_authors(author_keys, tweets):
     print("##### Função create_df_authors: ")
