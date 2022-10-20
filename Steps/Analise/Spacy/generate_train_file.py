@@ -35,7 +35,7 @@ def df_to_spacy(df, outfile, model = 'en_core_web_md'):
                 print("Skipping entity")
             else:
                 ents.append(span)
-                print(f'{span.doc.}')
+                print(f'{span}')
         doc.ents = ents # label the text with the ents
         db.add(doc)
     db.to_disk(outfile) # save the docbin object
