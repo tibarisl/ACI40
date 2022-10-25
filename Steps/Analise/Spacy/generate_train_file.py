@@ -35,7 +35,7 @@ def df_to_spacy(df, outfile, model = 'en_core_web_md'):
                 print("Skipping entity")
             else:
                 ents.append(span)
-                print(f'{span}')
+                #print(f'{span}')
         doc.ents = ents # label the text with the ents
         db.add(doc)
     db.to_disk(outfile) # save the docbin object
@@ -45,8 +45,8 @@ def generate_training_file(filepath, outdir, model = 'en_core_web_md'):
     """ Convert and split a jsonl file into spacy training files that are used when invoking `spacy train` """
     df = pd.read_json(path_or_buf=filepath, lines=True)
     df = df[df['label'].str.len() > 0]                  # filter out rows without labels
-    train=df.sample(frac=0.8,random_state=2)
-    test=df.drop(train.index)
+    train = df.sample(frac=0.8, random_state=2)
+    test = df.drop(train.index)
     df_to_spacy(train, f'{outdir}/train.spacy', model)
     df_to_spacy(test, f'{outdir}/test.spacy', model)
 
