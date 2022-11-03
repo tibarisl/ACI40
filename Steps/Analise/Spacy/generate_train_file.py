@@ -21,7 +21,7 @@ from spacy.tokens import DocBin
 #     db.to_disk(outfile) # save the docbin object
 #     print(f'Successfully wrote \'{outfile}\' to disk')
 
-def df_to_spacy(df, outfile, model = 'en_core_web_md'):
+def df_to_spacy(df, outfile, model = 'en_core_web_lg'):
     """ Convert a dataframe into a .spacy training file """
     nlp = spacy.load(model)
     # nlp = spacy.blank("en")
@@ -41,7 +41,7 @@ def df_to_spacy(df, outfile, model = 'en_core_web_md'):
     db.to_disk(outfile) # save the docbin object
     print(f'Successfully wrote \'{outfile}\' to disk')
 
-def generate_training_file(filepath, outdir, model = 'en_core_web_md'):
+def generate_training_file(filepath, outdir, model = 'en_core_web_lg'):
     """ Convert and split a jsonl file into spacy training files that are used when invoking `spacy train` """
     df = pd.read_json(path_or_buf=filepath, lines=True)
     df = df[df['label'].str.len() > 0]                  # filter out rows without labels

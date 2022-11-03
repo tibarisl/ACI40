@@ -68,7 +68,7 @@ def create_df_tweets(tweets_keys, tweets):
 
 
 def create_df_tweets_v2(tweets_keys, tweets):
-    print("##### Função create_df_tweets_enrich: ")
+    print("##### Função create_df_tweets_v2: ")
 
     dicionario = tweets_keys.copy()
 
