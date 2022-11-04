@@ -37,8 +37,20 @@ def testar_ner(texto):
     return lista
     # spacy.displacy.serve(doc, style="ent")
 
-def verificar_dicionario():
-        print("Ok - def verificar_dicionario")
+
+def verificar_dicionario(texto):
+
+    sql_string = f"""SELECT name FROM public.tbl_mitre_groups;"""
+
+    lista = list()
+
+    df_mitre_groups = Modules.databasemgt.get_df_from_database(sqlquery=sql_string)
+
+    for group in df_mitre_groups.values:
+        if group[0] in texto:
+            lista.append(group[0])
+
+    return lista
 
 
 def analisar_posts_SQL(num_posts):
@@ -52,7 +64,7 @@ def analisar_posts_SQL(num_posts):
     try:
         df_tweets = Modules.databasemgt.get_df_from_database(sqlquery=sql_string)
 
-        file = open(f"G:\\Meu Drive\\TCC\TCC II - Everson Leonardi\\Projeto\\Dados\\Analise\\Analise_SQL_{datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H-%M-%S')}.txt", "x")
+        file = open(f"G:\\Meu Drive\\TCC\TCC II - Everson Leonardi\\Projeto\\Dados\\Analise\\Analise_SQL_{datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H-%M-%S')}.txt", "x", encoding="utf-8")
 
         for index, row in df_tweets.iterrows():
             print()
@@ -71,11 +83,25 @@ def analisar_posts_SQL(num_posts):
             file.write(row['full_text'])
             file.write("\n")
 
+            print(f"{10 * '-----'}")
+            file.write(f"{10 * '-----'}\n")
+
             ner = testar_ner(row['full_text'])
+            print(f"Entidades: ")
+            file.write(f"Entidades: ")
             for i in ner:
                 print(i)
                 file.write(str(i))
                 file.write("\n")
+
+            dic = verificar_dicionario(row['full_text'])
+            print(f"Threat actor(s): ")
+            file.write(f"Threat actor(s): ")
+            for i in dic:
+                print(i)
+                file.write(str(i))
+            print()
+            file.write("\n")
 
     except dbm.error:
         print(f"----> A tabela 'tbl_tweets_v2' ainda não foi criada.")
