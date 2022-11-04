@@ -5,6 +5,7 @@ import dbm
 import tweepy
 import Modules.pandasmgt
 import Modules.twitter_auth
+import datetime
 
 
 def gerar_arquivo_treino():
@@ -28,27 +29,53 @@ def testar_ner(texto):
     nlp1 = spacy.load(r"G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\models\model-best")  #load the best model
     doc = nlp1(texto)  # input sample text
 
-    for ent in doc.ents:
-        print(ent.text, ent.start_char, ent.end_char, ent.label_)
+    lista = list()
 
+    for ent in doc.ents:
+        lista.append([ent.text, ent.start_char, ent.end_char, ent.label_])
+
+    return lista
     # spacy.displacy.serve(doc, style="ent")
+
+def verificar_dicionario():
+        print("Ok - def verificar_dicionario")
+
 
 def analisar_posts_SQL(num_posts):
 
     print("##### def analisar_posts_SQL")
     print("----> iniciado.")
 
+
+    sql_string = f"""SELECT id,full_text FROM public.non_trained_tweets order by random() limit {num_posts};"""
+
     try:
-        df_tweets = Modules.databasemgt.get_df_from_database(sqlquery=f"SELECT id,full_text FROM public.tbl_tweets_v2 order by random() limit {num_posts};")
+        df_tweets = Modules.databasemgt.get_df_from_database(sqlquery=sql_string)
+
+        file = open(f"G:\\Meu Drive\\TCC\TCC II - Everson Leonardi\\Projeto\\Dados\\Analise\\Analise_SQL_{datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H-%M-%S')}.txt", "x")
 
         for index, row in df_tweets.iterrows():
             print()
+            file.write("\n")
             print()
+            file.write("\n")
+
             print(f"{10 * '====='}")
+            file.write(f"{10 * '====='}\n")
+
             print(row['id'])
+            file.write(str(row['id']))
+            file.write("\n")
+
             print(row['full_text'])
-            print(f"{10 * '-----'}")
-            testar_ner(row['full_text'])
+            file.write(row['full_text'])
+            file.write("\n")
+
+            ner = testar_ner(row['full_text'])
+            for i in ner:
+                print(i)
+                file.write(str(i))
+                file.write("\n")
 
     except dbm.error:
         print(f"----> A tabela 'tbl_tweets_v2' ainda não foi criada.")
@@ -111,7 +138,7 @@ def analisar_posts_Twitter(num_posts):
 
 
 #
-#   BLOCO DE TESTES
+#   BLOCO DE TESTES E ANALISE
 #
 
 #gerar_arquivo_treino()
@@ -124,5 +151,5 @@ sophisticated DDoS attack… https://t.co/8RNZLyTB3r https://t.co/kJ0ztEVSiA
 
 #testar_ner(texto)
 
-#analisar_posts_SQL(num_posts=30)
+analisar_posts_SQL(num_posts=3000)
 #analisar_posts_Twitter(num_posts=20)
