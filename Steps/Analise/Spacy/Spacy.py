@@ -6,6 +6,7 @@ import tweepy
 import Modules.pandasmgt
 import Modules.twitter_auth
 import datetime
+import re
 
 
 def gerar_arquivo_treino():
@@ -47,7 +48,7 @@ def verificar_dicionario(texto):
     df_mitre_groups = Modules.databasemgt.get_df_from_database(sqlquery=sql_string)
 
     for group in df_mitre_groups.values:
-        if group[0] in texto:
+        if re.findall(group[0], texto, flags=re.IGNORECASE):
             lista.append(group[0])
 
     return lista
@@ -59,7 +60,7 @@ def analisar_posts_SQL(num_posts):
     print("----> iniciado.")
 
 
-    sql_string = f"""SELECT id,full_text FROM public.non_trained_tweets order by random() limit {num_posts};"""
+    sql_string = f"""SELECT id,full_text FROM public.non_trained_tweets limit {num_posts};"""
 
     try:
         df_tweets = Modules.databasemgt.get_df_from_database(sqlquery=sql_string)
@@ -69,8 +70,8 @@ def analisar_posts_SQL(num_posts):
         for index, row in df_tweets.iterrows():
             print()
             file.write("\n")
-            print()
-            file.write("\n")
+            print(f"Item {index} de {df_tweets.index.size}")
+            file.write(f"Item {index} de {df_tweets.index.size}\n")
 
             print(f"{10 * '====='}")
             file.write(f"{10 * '====='}\n")
