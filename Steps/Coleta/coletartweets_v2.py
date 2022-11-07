@@ -5,6 +5,7 @@ import Modules.pandasmgt
 import Modules.twitter_auth
 import Modules.databasemgt
 import datetime
+from datetime import timedelta
 
 print("##### Modulo coletartweets")
 print("----> Módulo iniciado.")
@@ -39,7 +40,7 @@ print(f"----> Pesquisa concluida. Itens identificados: {tweets.__len__()}")
 
 num_followers = 1000
 num_tweets = 1000
-created_until = 2020
+created_until = datetime.datetime.now() - timedelta(days=365)
 min_tweet_text_len = 30
 
 temp_tweets = []
@@ -60,11 +61,11 @@ print(f"----> Removidos 'statuses_count' < {num_tweets}. Restantes: {tweets.__le
 
 temp_tweets = []
 for tweet in tweets:
-    if tweet.author.created_at <= datetime.datetime(2019, 6, 1):
+    if tweet.author.created_at <= created_until:
         temp_tweets.append(tweet)
 tweets = temp_tweets.copy()
 
-print(f"----> Removidos 'created_at' > {created_until}. Restantes: {tweets.__len__()}")
+print(f"----> Removidos 'created_at' < {created_until}. Restantes: {tweets.__len__()}")
 
 temp_tweets = []
 for tweet in tweets:
