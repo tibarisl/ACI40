@@ -1,3 +1,4 @@
+import pandas
 from Steps.Analise.Spacy.generate_train_file import generate_training_file
 import spacy
 import Modules.databasemgt
@@ -59,13 +60,15 @@ def analisar_posts_SQL(num_posts):
     print("##### def analisar_posts_SQL")
     print("----> iniciado.")
 
+    df_result = pandas.DataFrame(columns=['id', 'full_text', 'screen_name', 'created_at', 'Entidades', 'Threat actor(s)'])
 
-    sql_string = f"""SELECT id,full_text FROM public.non_trained_tweets limit {num_posts};"""
+    sql_string = f"""SELECT id,full_text, screen_name,created_at  FROM public.non_trained_tweets limit {num_posts};"""
 
     try:
         df_tweets = Modules.databasemgt.get_df_from_database(sqlquery=sql_string)
 
-        file = open(f"G:\\Meu Drive\\TCC\TCC II - Everson Leonardi\\Projeto\\Dados\\Analise\\Analise_SQL_{datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H-%M-%S')}.txt", "x", encoding="utf-8")
+        file = open(f"G:\\Meu Drive\\TCC\TCC II - Everson Leonardi\\Projeto\\Dados\\Analise\\Analise_SQL_txt_{datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H-%M-%S')}.txt", "x", encoding="utf-8")
+        file_xlsx = (f"G:\\Meu Drive\\TCC\TCC II - Everson Leonardi\\Projeto\\Dados\\Analise\\Analise_SQL_excel_{datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H-%M-%S')}.xlsx")
 
         for index, row in df_tweets.iterrows():
             print()
@@ -78,6 +81,14 @@ def analisar_posts_SQL(num_posts):
 
             print(row['id'])
             file.write(str(row['id']))
+            file.write("\n")
+
+            print(row['screen_name'])
+            file.write(str(row['screen_name']))
+            file.write("\n")
+
+            print(row['created_at'])
+            file.write(str(row['created_at']))
             file.write("\n")
 
             print(row['full_text'])
@@ -103,6 +114,10 @@ def analisar_posts_SQL(num_posts):
                 file.write(str(i))
             print()
             file.write("\n")
+
+
+            df_tmp = pandas.Series([row['id'],row['full_text'], row['screen_name'], row['created_at'], ner, dic],index=['id', 'full_text', 'screen_name', 'created_at', 'Entidades', 'Threat actor(s)'])
+            df_result = df_result.append(df_tmp, ignore_index=True)
 
     except dbm.error:
         print(f"----> A tabela 'tbl_tweets_v2' ainda não foi criada.")
