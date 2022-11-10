@@ -1,3 +1,5 @@
+from tokenize import group
+
 import pandas
 from Steps.Analise.Spacy.generate_train_file import generate_training_file
 import spacy
@@ -7,7 +9,6 @@ import tweepy
 import Modules.pandasmgt
 import Modules.twitter_auth
 import datetime
-import re
 
 
 def gerar_arquivo_treino():
@@ -16,7 +17,7 @@ def gerar_arquivo_treino():
 
 
 def criar_modelos():
-    return
+
 
     #   Executar este comandos no Terminal para criação do arquivo "config" baseado no "base_config"
     # python -m spacy init fill-config "G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\base_config.cfg" "G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\config.cfg"
@@ -25,11 +26,11 @@ def criar_modelos():
     # python -m spacy train "G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\config.cfg" --output "G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\models" --paths.train "G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\TrainFile\train.spacy" --paths.dev "G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\TrainFile\train.spacy"
     # Usando o arquivo .test para o --paths.dev
     # python -m spacy train "G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\config.cfg" --output "G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\models" --paths.train "G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\TrainFile\train.spacy" --paths.dev "G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\TrainFile\test.spacy"
+    return
 
 
-def testar_ner(texto):
-    nlp1 = spacy.load(r"G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\models\model-best")  #load the best model
-    doc = nlp1(texto)  # input sample text
+def testar_ner(texto, ner):
+    doc = ner(texto)  # input sample text
 
     lista = list()
 
@@ -40,7 +41,7 @@ def testar_ner(texto):
     # spacy.displacy.serve(doc, style="ent")
 
 
-def verificar_dicionario(texto):
+def verificar_dicionario(texto,tok):
 
     sql_string = f"""SELECT name FROM public.tbl_mitre_groups;"""
 
@@ -48,9 +49,13 @@ def verificar_dicionario(texto):
 
     df_mitre_groups = Modules.databasemgt.get_df_from_database(sqlquery=sql_string)
 
+    tokens = tok(texto)
+    tokens_list = [token.text for token in tokens]
+
     for group in df_mitre_groups.values:
-        if re.findall(group[0], texto, flags=re.IGNORECASE):
+        if group[0].upper() in map(str.upper, tokens_list):
             lista.append(group[0])
+
 
     return lista
 
@@ -61,6 +66,10 @@ def analisar_posts_SQL(num_posts):
     print("----> iniciado.")
 
     df_result = pandas.DataFrame(columns=['id', 'full_text', 'screen_name', 'created_at', 'Entidades', 'Threat actor(s)'])
+
+    ner = spacy.load(r"G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\models\model-best")  # load the best model
+    tok = spacy.load("en_core_web_lg")
+
 
     sql_string = f"""SELECT id,full_text, screen_name,created_at  FROM public.non_trained_tweets limit {num_posts};"""
 
@@ -98,15 +107,15 @@ def analisar_posts_SQL(num_posts):
             print(f"{10 * '-----'}")
             file.write(f"{10 * '-----'}\n")
 
-            ner = testar_ner(row['full_text'])
+            ent = testar_ner(row['full_text'], ner)
             print(f"Entidades: ")
             file.write(f"Entidades: ")
-            for i in ner:
+            for i in ent:
                 print(i)
                 file.write(str(i))
                 file.write("\n")
 
-            dic = verificar_dicionario(row['full_text'])
+            dic = verificar_dicionario(row['full_text'], tok)
             print(f"Threat actor(s): ")
             file.write(f"Threat actor(s): ")
             for i in dic:
@@ -116,8 +125,10 @@ def analisar_posts_SQL(num_posts):
             file.write("\n")
 
 
-            df_tmp = pandas.Series([row['id'],row['full_text'], row['screen_name'], row['created_at'], ner, dic],index=['id', 'full_text', 'screen_name', 'created_at', 'Entidades', 'Threat actor(s)'])
+            df_tmp = pandas.Series([row['id'],row['full_text'], row['screen_name'], row['created_at'], ent, dic],index=['id', 'full_text', 'screen_name', 'created_at', 'Entidades', 'Threat actor(s)'])
             df_result = df_result.append(df_tmp, ignore_index=True)
+
+        df_result.to_excel(file_xlsx)
 
     except dbm.error:
         print(f"----> A tabela 'tbl_tweets_v2' ainda não foi criada.")
@@ -183,15 +194,21 @@ def analisar_posts_Twitter(num_posts):
 #   BLOCO DE TESTES E ANALISE
 #
 
+
 #gerar_arquivo_treino()
 
 texto = """
 IoT Botnets Fuels DDoS Attacks – Are You Prepared?: The increased proliferation of IoT devices paved the way for 
 the rise of IoT botnets that amplifies DDoS attacks today. This is a dangerous warning that the possibility of a 
-sophisticated DDoS attack… https://t.co/8RNZLyTB3r https://t.co/kJ0ztEVSiA
+sophisticated DDoS attack… https://t.co/8RNZLyTB3r https://t.co/kJ0ztEVSiA #tick ticknes Lazarus, Indrik Spider.
+"""
+
+texto1 = """
+#tick ticknes Lazarus, Indrik Spider.
 """
 
 #testar_ner(texto)
+#print(verificar_dicionario(texto1))
 
 analisar_posts_SQL(num_posts=3000)
 #analisar_posts_Twitter(num_posts=20)
