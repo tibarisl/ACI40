@@ -1,5 +1,3 @@
-from tokenize import group
-
 import pandas
 from Steps.Analise.Spacy.generate_train_file import generate_training_file
 import spacy
@@ -9,7 +7,7 @@ import tweepy
 import Modules.pandasmgt
 import Modules.twitter_auth
 import datetime
-
+import re
 
 def gerar_arquivo_treino():
     # Gerar arquivo de treino e teste baseado nos dados do DOCCANO
@@ -53,10 +51,12 @@ def verificar_dicionario(texto,tok):
     tokens_list = [token.text for token in tokens]
 
     for group in df_mitre_groups.values:
-        if group[0].upper() in map(str.upper, tokens_list):
-            lista.append(group[0])
-
-
+        if not (' ' in group[0]):
+            if group[0].upper() in map(str.upper, tokens_list):
+                lista.append(group[0])
+        else:
+            if group[0].upper() in tokens.text.upper():
+                lista.append(group[0])
     return lista
 
 
@@ -116,8 +116,8 @@ def analisar_posts_SQL(num_posts):
                 file.write("\n")
 
             dic = verificar_dicionario(row['full_text'], tok)
-            print(f"Threat actor(s): ")
-            file.write(f"Threat actor(s): ")
+            print(f"Threat actor(s): \n")
+            file.write(f"Threat actor(s): \n")
             for i in dic:
                 print(i)
                 file.write(str(i))
@@ -148,7 +148,8 @@ def analisar_posts_Twitter(num_posts):
 
     # Parametros do Tweepy Cursor
     itemcount = num_posts
-    search_words = '("THREAT" OR "MALWARE" OR "VIRUS" OR "ATTACK" OR "VULNERABILITY") AND ("IOT" OR "CPS" OR "SCADA" OR "INDUSTRY 4.0")'
+    #search_words = '("THREAT" OR "MALWARE" OR "VIRUS" OR "ATTACK" OR "VULNERABILITY") AND ("IOT" OR "CPS" OR "SCADA" OR "INDUSTRY 4.0")'
+    search_words = "IoT -from:gigaaaAI"
     tweet_filter = " -filter:retweets"
     search_query = search_words + tweet_filter
 
@@ -167,21 +168,72 @@ def analisar_posts_Twitter(num_posts):
 
     print(f"----> Pesquisa concluida. Itens identificados: {tweets.__len__()}")
 
+    # Cria um Daframe para adicionar os resultados.
+    df_result = pandas.DataFrame(columns=['id', 'full_text', 'screen_name', 'created_at', 'Entidades', 'Threat actor(s)'])
+
+    ner = spacy.load(r"G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\models\model-best")  # load the best model
+    tok = spacy.load("en_core_web_lg")
+
+
     # Pegar as propriedades dos Tweets
     tweetdictkeys = {'id': None, 'full_text': None, 'screen_name': None, 'created_at': None}
 
     try:
         df_tweets = Modules.pandasmgt.create_df_tweets_v2(tweets_keys=tweetdictkeys, tweets=tweets)
 
+        file = open(f"G:\\Meu Drive\\TCC\TCC II - Everson Leonardi\\Projeto\\Dados\\Analise\\Analise_Twitter_txt_{datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H-%M-%S')}.txt", "x", encoding="utf-8")
+        file_xlsx = (f"G:\\Meu Drive\\TCC\TCC II - Everson Leonardi\\Projeto\\Dados\\Analise\\Analise_Twitter_excel_{datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H-%M-%S')}.xlsx")
+
         for index, row in df_tweets.iterrows():
             print()
-            print()
-            print(f"{10 * '====='}")
-            print(row['id'])
-            print(row['full_text'])
-            print(f"{10 * '-----'}")
-            testar_ner(row['full_text'])
+            file.write("\n")
+            print(f"Item {index} de {df_tweets.index.size}")
+            file.write(f"Item {index} de {df_tweets.index.size}\n")
 
+            print(f"{10 * '====='}")
+            file.write(f"{10 * '====='}\n")
+
+            print(row['id'])
+            file.write(str(row['id']))
+            file.write("\n")
+
+            print(row['screen_name'])
+            file.write(str(row['screen_name']))
+            file.write("\n")
+
+            print(row['created_at'])
+            file.write(str(row['created_at']))
+            file.write("\n")
+
+            print(row['full_text'])
+            file.write(row['full_text'])
+            file.write("\n")
+
+            print(f"{10 * '-----'}")
+            file.write(f"{10 * '-----'}\n")
+
+            ent = testar_ner(row['full_text'], ner)
+            print(f"Entidades: ")
+            file.write(f"Entidades: ")
+            for i in ent:
+                print(i)
+                file.write(str(i))
+                file.write("\n")
+
+            dic = verificar_dicionario(row['full_text'], tok)
+            print(f"Threat actor(s): \n")
+            file.write(f"Threat actor(s): \n")
+            for i in dic:
+                print(i)
+                file.write(str(i))
+            print()
+            file.write("\n")
+
+            df_tmp = pandas.Series([row['id'], row['full_text'], row['screen_name'], row['created_at'], ent, dic],
+                                   index=['id', 'full_text', 'screen_name', 'created_at', 'Entidades',
+                                          'Threat actor(s)'])
+            df_result = df_result.append(df_tmp, ignore_index=True)
+        df_result.to_excel(file_xlsx)
     except dbm.error:
         print(f"----> A tabela 'tbl_tweets_v2' ainda não foi criada.")
     except Exception as error:
@@ -198,17 +250,18 @@ def analisar_posts_Twitter(num_posts):
 #gerar_arquivo_treino()
 
 texto = """
-IoT Botnets Fuels DDoS Attacks – Are You Prepared?: The increased proliferation of IoT devices paved the way for 
-the rise of IoT botnets that amplifies DDoS attacks today. This is a dangerous warning that the possibility of a 
-sophisticated DDoS attack… https://t.co/8RNZLyTB3r https://t.co/kJ0ztEVSiA #tick ticknes Lazarus, Indrik Spider.
+The US has indicted 5 Chinese nationals for hacking as part of APT 41 or “Wicked Panda” which initiates global intrusion campaigns impacting 100’s of companies. From Deputy Attorney General Jeffrey A. Rosen “Regrettably, the Chinese communist party has chosen..
 """
 
 texto1 = """
 #tick ticknes Lazarus, Indrik Spider.
 """
 
-#testar_ner(texto)
-#print(verificar_dicionario(texto1))
+#ner = spacy.load(r"G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\models\model-best")  # load the best model
+#tok = spacy.load("en_core_web_lg")
 
-analisar_posts_SQL(num_posts=3000)
-#analisar_posts_Twitter(num_posts=20)
+#testar_ner(texto)
+#print(verificar_dicionario(texto, tok))
+
+#analisar_posts_SQL(num_posts=3000)
+#analisar_posts_Twitter(num_posts=1000)
