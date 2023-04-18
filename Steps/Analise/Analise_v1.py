@@ -7,7 +7,7 @@ import tweepy
 import Modules.pandasmgt
 import Modules.twitter_auth
 import datetime
-
+import re
 
 def gerar_arquivo_treino():
     # Gerar arquivo de treino e teste baseado nos dados do DOCCANO

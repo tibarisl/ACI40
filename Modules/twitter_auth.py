@@ -6,7 +6,7 @@ def load_api():
     :return: Retorna um objeto API com o TweePy
     """
 
-    with open('G:/Meu Drive/TCC/TCC II - Everson Leonardi/Projeto/ACI40/Files/twitter-tokens.txt') as tfile:
+    with open('/Secrets/twitter-tokens.txt') as tfile:
         consumer_key = tfile.readline().strip("\n")
         consumer_secret = tfile.readline().strip("\n")
         access_token = tfile.readline().strip("\n")
