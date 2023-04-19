@@ -1,13 +1,6 @@
 import pandas as pd
 import datetime
 
-""""
-
-    Modulo de gerenciamento de dados com o framework Pandas
-
-"""
-
-# Cria um dataframe Pandas com autores
 def create_df_authors(author_keys, tweets):
     print("##### Função create_df_authors: ")
 
@@ -38,7 +31,7 @@ def create_df_authors(author_keys, tweets):
 
     return author_df
 
-# Cria um dataframe Pandas (V1)
+
 def create_df_tweets(tweets_keys, tweets):
     print("##### Função create_df_tweets: ")
 
@@ -73,7 +66,7 @@ def create_df_tweets(tweets_keys, tweets):
 
     return tweets_df
 
-# Cria um dataframe Pandas (V2)
+
 def create_df_tweets_v2(tweets_keys, tweets):
     print("##### Função create_df_tweets_v2: ")
 
@@ -119,7 +112,7 @@ def create_df_tweets_v2(tweets_keys, tweets):
 
     return tweets_df
 
-# remove itens de um dataframe Pandas de acordo com o comparador e valor especificado
+
 def remove_df_items(dataframe=pd.DataFrame, column_name=str, comparation_string=str, value=object):
 
     print("##### Função remove_df_items: ")

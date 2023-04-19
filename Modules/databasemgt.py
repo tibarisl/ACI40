@@ -1,11 +1,6 @@
 from sqlalchemy import create_engine
 import pandas as pd
 
-""""
-
-    Modulo de gerenciamento para adição e extração de dados do banco de dados PostgresSQL
-
-"""
 
 def create_sqlalchemy_engine():
 

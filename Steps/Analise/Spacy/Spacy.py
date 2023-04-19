@@ -243,7 +243,7 @@ def analisar_posts_Twitter(num_posts):
 
 
 #
-#   BLOCO DE TESTES
+#   BLOCO DE TESTES E ANALISE
 #
 
 
