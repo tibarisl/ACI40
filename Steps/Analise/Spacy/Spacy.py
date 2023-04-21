@@ -76,6 +76,8 @@ def analisar_posts_SQL(num_posts):
     try:
         df_tweets = Modules.databasemgt.get_df_from_database(sqlquery=sql_string)
 
+
+
         file = open(f"G:\\Meu Drive\\TCC\TCC II - Everson Leonardi\\Projeto\\Dados\\Analise\\Analise_SQL_txt_{datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H-%M-%S')}.txt", "x", encoding="utf-8")
         file_xlsx = (f"G:\\Meu Drive\\TCC\TCC II - Everson Leonardi\\Projeto\\Dados\\Analise\\Analise_SQL_excel_{datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H-%M-%S')}.xlsx")
 
@@ -241,27 +243,3 @@ def analisar_posts_Twitter(num_posts):
 
     print(f"----> Fim da execução. Tweets impressos: {df_tweets.__len__()}")
 
-
-#
-#   BLOCO DE TESTES E ANALISE
-#
-
-
-#gerar_arquivo_treino()
-
-texto = """
-The US has indicted 5 Chinese nationals for hacking as part of APT 41 or “Wicked Panda” which initiates global intrusion campaigns impacting 100’s of companies. From Deputy Attorney General Jeffrey A. Rosen “Regrettably, the Chinese communist party has chosen..
-"""
-
-texto1 = """
-#tick ticknes Lazarus, Indrik Spider.
-"""
-
-#ner = spacy.load(r"G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\models\model-best")  # load the best model
-#tok = spacy.load("en_core_web_lg")
-
-#testar_ner(texto)
-#print(verificar_dicionario(texto, tok))
-
-#analisar_posts_SQL(num_posts=3000)
-#analisar_posts_Twitter(num_posts=1000)
