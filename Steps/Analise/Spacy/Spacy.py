@@ -32,7 +32,6 @@ def criar_modelo(resultNumber):
 
     sys.stdout = open(output_filename, 'w', encoding="utf-8")
     trainsp(config_path, output_path)
-    print("##### Criando arquivo de treino randomico número")
     sys.stdout.close()
     sys.stdout = sys.__stdout__
 

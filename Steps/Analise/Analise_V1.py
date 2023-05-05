@@ -1,7 +1,7 @@
 import Steps.Analise.Spacy.Spacy as analise
 
 
-for i in range(23, 31):
+for i in range(11, 31):
 
     print("##### Criando arquivo de treino randomico número:" + str(i))
     analise.gerar_arquivo_treino(sampleNumber=i)
