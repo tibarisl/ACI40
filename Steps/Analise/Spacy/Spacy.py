@@ -15,7 +15,6 @@ def gerar_arquivo_treino(sampleNumber):
     # Gerar arquivo de treino e teste baseado nos dados do DOCCANO
     generate_training_file(rdmstate=sampleNumber, filepath="G:\\Meu Drive\\TCC\\TCC II - Everson Leonardi\\Projeto\\Dados\\Doccano\\admin.jsonl", outdir="G:\\Meu Drive\\TCC\\TCC II - Everson Leonardi\\Projeto\\Dados\\TrainFile\\")
 
-
 def criar_modelo(resultNumber):
 
     output_filename = 'G:\\Meu Drive\\TCC\\TCC II - Everson Leonardi\\Projeto\\Dados\\TrainFile\\Resultado RS'+ str(resultNumber) + '.txt'
@@ -37,7 +36,6 @@ def criar_modelo(resultNumber):
 
     return
 
-
 def testar_ner(texto, ner):
     doc = ner(texto)  # input sample text
 
@@ -48,7 +46,6 @@ def testar_ner(texto, ner):
 
     return lista
     # spacy.displacy.serve(doc, style="ent")
-
 
 def verificar_dicionario(texto,tok):
 
@@ -69,7 +66,6 @@ def verificar_dicionario(texto,tok):
             if group[0].upper() in tokens.text.upper():
                 lista.append(group[0])
     return lista
-
 
 def analisar_posts_SQL(num_posts):
 
@@ -150,6 +146,84 @@ def analisar_posts_SQL(num_posts):
 
     print(f"----> Fim da execução. Tweets impressos: {df_tweets.__len__()}")
 
+def analise_Manual_posts_SQL(num_posts):
+
+    print("##### def analisar_posts_SQL")
+    print("----> iniciado.")
+
+    df_result = pandas.DataFrame(columns=['id', 'full_text', 'screen_name', 'created_at', 'Entidades', 'Threat actor(s)'])
+
+    ner = spacy.load(r"G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\models\model-best")  # load the best model
+    tok = spacy.load("en_core_web_lg")
+
+
+    sql_string = f"""SELECT id,full_text, screen_name,created_at  FROM public."Manual_score_analisys" limit {num_posts};"""
+
+    try:
+        df_tweets = Modules.databasemgt.get_df_from_database(sqlquery=sql_string)
+
+
+
+        file = open(f"G:\\Meu Drive\\TCC\TCC II - Everson Leonardi\\Projeto\\Dados\\Analise\\Analise_Manual_SQL_txt_{datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H-%M-%S')}.txt", "x", encoding="utf-8")
+        file_xlsx = (f"G:\\Meu Drive\\TCC\TCC II - Everson Leonardi\\Projeto\\Dados\\Analise\\Analise_Manual_SQL_excel_{datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H-%M-%S')}.xlsx")
+
+        for index, row in df_tweets.iterrows():
+            print()
+            file.write("\n")
+            print(f"Item {index} de {df_tweets.index.size}")
+            file.write(f"Item {index} de {df_tweets.index.size}\n")
+
+            print(f"{10 * '====='}")
+            file.write(f"{10 * '====='}\n")
+
+            print(row['id'])
+            file.write(str(row['id']))
+            file.write("\n")
+
+            print(row['screen_name'])
+            file.write(str(row['screen_name']))
+            file.write("\n")
+
+            print(row['created_at'])
+            file.write(str(row['created_at']))
+            file.write("\n")
+
+            print(row['full_text'])
+            file.write(row['full_text'])
+            file.write("\n")
+
+            print(f"{10 * '-----'}")
+            file.write(f"{10 * '-----'}\n")
+
+            ent = testar_ner(row['full_text'], ner)
+            print(f"Entidades: ")
+            file.write(f"Entidades: ")
+            for i in ent:
+                print(i)
+                file.write(str(i))
+                file.write("\n")
+
+            dic = verificar_dicionario(row['full_text'], tok)
+            print(f"Threat actor(s): \n")
+            file.write(f"Threat actor(s): \n")
+            for i in dic:
+                print(i)
+                file.write(str(i))
+            print()
+            file.write("\n")
+
+
+            df_tmp = pandas.Series([row['id'],row['full_text'], row['screen_name'], row['created_at'], ent, dic],index=['id', 'full_text', 'screen_name', 'created_at', 'Entidades', 'Threat actor(s)'])
+            df_result = df_result.append(df_tmp, ignore_index=True)
+
+        df_result.to_excel(file_xlsx)
+
+    except dbm.error:
+        print(f"----> A tabela 'tbl_tweets_v2' ainda não foi criada.")
+    except Exception as error:
+        print(f"----> Ocorreu o seguinte erro: {error}")
+
+    print(f"----> Fim da execução. Tweets impressos: {df_tweets.__len__()}")
 
 def analisar_posts_Twitter(num_posts):
 

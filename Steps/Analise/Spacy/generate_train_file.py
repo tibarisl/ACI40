@@ -45,7 +45,7 @@ def generate_training_file(filepath, outdir, rdmstate, model = 'en_core_web_lg')
     """ Convert and split a jsonl file into spacy training files that are used when invoking `spacy train` """
     df = pd.read_json(path_or_buf=filepath, lines=True)
     df = df[df['label'].str.len() > 0]                  # filter out rows without labels
-    train = df.sample(frac=0.8, random_state=rdmstate)
+    train = df.sample(frac=0.99, random_state=rdmstate)
     test = df.drop(train.index)
     df_to_spacy(train, f'{outdir}/train.spacy', model)
     df_to_spacy(test, f'{outdir}/test.spacy', model)
