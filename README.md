@@ -1,4 +1,5 @@
-# ACI40
+# ACI40: Ameaças cibernéticas na Indústria 4.0: Uso do Twitter para identificação dos atores de ameaças
+
 
 O repositório ACI40 foi criado para armazenar os códigos relacionados ao meu projeto de Trabalho de Conclusão de Curso (TCC) no curso de Sistemas de Informação. O objetivo principal desse trabalho é identificar e analisar ameaças cibernéticas no contexto da Indústria 4.0, utilizando técnicas de machine learning.
 
