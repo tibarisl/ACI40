@@ -1,0 +1,1318 @@
+
+Item 0 de 100
+==================================================
+1585748722780147712
+threatintelctr
+2022-10-27 21:42:11
+🚨 NEW: CVE-2022-41627 🚨 The physical IoT device of the AliveCor's KardiaMobile, a smartphone-based personal electrocardiogram (EKG) has no encryption for its data-over-sound protocols. Exploiting this vulnerability... (click for more)  https://t.co/pavNR9gLKy
+--------------------------------------------------
+Entidades: ['IoT device', 37, 47, 'Target']
+['Exploiting', 185, 195, 'Attack method']
+Threat actor(s): 
+
+
+Item 1 de 100
+==================================================
+1585690037349363713
+jamesvgingerich
+2022-10-27 17:49:00
+Ring cameras "pose a threat" to families and the public, #Privacy campaigners claim amid surge in hack attacks. (Newsweek) #IoT #Security #IoTPL #IoTCL  #IoTPractioner #IoTCommunity @IoTcommunity @IoTchannel  https://t.co/Kj3cx9deVv https://t.co/VHV9BPaA6e
+--------------------------------------------------
+Entidades: ['Ring cameras', 0, 12, 'Organization']
+['hack', 98, 102, 'Attack method']
+Threat actor(s): 
+
+
+Item 2 de 100
+==================================================
+1585645133038379008
+melihozhan
+2022-10-27 14:50:34
+Once #IoT devices are reliably discovered and inventoried, they need to be #managed and #secured with the same rigor as other #network devices. That requires configuration management, vulnerability scanning, traffic monitoring, MSS…https://t.co/8T4UXvNekM https://t.co/KdzobSYz3j
+--------------------------------------------------
+Entidades: ['IoT devices', 6, 17, 'Target']
+['network devices', 127, 142, 'Target']
+['vulnerability scanning', 184, 206, 'Attack method']
+Threat actor(s): 
+
+
+Item 3 de 100
+==================================================
+1585637493977645056
+CENGNCanada
+2022-10-27 14:20:12
+As companies adopt #IoT and #5G technology into their businesses, they must consider security measures to protect their devices and assets from attacks. 
+
+Read more about what your company can do to secure itself against these risks: https://t.co/Kum47vSVNA
+--------------------------------------------------
+Entidades: ['businesses', 54, 64, 'Target']
+Threat actor(s): 
+
+
+Item 4 de 100
+==================================================
+1585632433688309760
+CiscoIoT
+2022-10-27 14:00:06
+Cisco and SEL created the first solution for encrypting network traffic and mitigating the vulnerability within utility boxes.
+
+Read more on the Cisco IoT blog now! 
+
+https://t.co/XK34EO36vp
+
+#IoT #utilities https://t.co/poIExvxveV
+--------------------------------------------------
+Entidades: ['Cisco', 0, 5, 'Organization']
+['SEL', 10, 13, 'Target']
+['encrypting network', 45, 63, 'Target']
+Threat actor(s): 
+
+
+Item 5 de 100
+==================================================
+1585628434557976576
+SonicWall
+2022-10-27 13:44:13
+Morgan, SonicWall Channel Account Manager, provides today's @CyberSecMonth insight on #IoT attacks and the risk they can pose to businesses. Check out the latest threat data on IoT and other #cyberattacks from the SonicWall Capture Labs threat researchers: https://t.co/KGuAV77kpI https://t.co/FljLwgVw35
+--------------------------------------------------
+Entidades: ['Morgan', 0, 6, 'Target']
+['SonicWall', 8, 17, 'Organization']
+['cyberattacks', 192, 204, 'Attack method']
+['SonicWall', 214, 223, 'Organization']
+Threat actor(s): 
+
+
+Item 6 de 100
+==================================================
+1585549396288147456
+MISPProject
+2022-10-27 08:30:08
+A new MISP module has been added to support @VARIoT_project IoT exploit &amp; vulnerability database.
+
+https://t.co/jIxZA1jeMS
+
+You can now expand the CVE entries with the known associated exploits. #threatintel 
+
+Work done by @chrisred_68 at the VARIoT hackathon in Luxembourg. https://t.co/q0Cc84O0RU
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 7 de 100
+==================================================
+1585530775432097792
+CyberSecDN
+2022-10-27 07:16:09
+How to navigate the current 5G and IoT threat landscape https://t.co/FFL6bOEpVF #Sec_Cyber
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 8 de 100
+==================================================
+1585521760837009408
+ExpComputer
+2022-10-27 06:40:20
+Q2-Q3 2022 #Ransomware Report Reveals Ransomware Has Grown by 466% Since 2019 And Ransomware and #Malware Now Being Used as a Precursor to Physical War - https://t.co/dpYaTVS6YG | #technews #technology #futuretech #AI #ML #RPA #IoT #IT #Cloud #security
+--------------------------------------------------
+Entidades: ['Ransomware', 12, 22, 'Attack method']
+['Ransomware', 38, 48, 'Attack method']
+['Ransomware', 82, 92, 'Attack method']
+['Malware', 98, 105, 'Attack method']
+Threat actor(s): 
+
+
+Item 9 de 100
+==================================================
+1585390854222610432
+fogoros
+2022-10-26 22:00:09
+From the rise of self-driving cars to connected medical devices, #IoT devices require a heightened level of security to mitigate a new and continuously evolving threat landscape - https://t.co/4FvmfdUHAa 
+
+@aicas_IoT @Lago72 #keyfactor_ics #sponsored #iotsecurity #cybersecurity https://t.co/vwCNUaNXHi
+--------------------------------------------------
+Entidades: ['medical devices', 48, 63, 'Target']
+['IoT devices', 66, 77, 'Target']
+Threat actor(s): 
+
+
+Item 10 de 100
+==================================================
+1585378232819453962
+LookingPoint
+2022-10-26 21:10:00
+"Consumer devices...have become attack targets as we have embraced connectivity without necessarily following proper security measures. This has been demonstrated by attacks that access cameras within these smart devices." -@Cisco https://t.co/Ge0hXDyu2X
+--------------------------------------------------
+Entidades: ['Consumer devices', 1, 17, 'Target']
+['smart devices', 207, 220, 'Target']
+Threat actor(s): 
+
+
+Item 11 de 100
+==================================================
+1585328719215968270
+F5Labs
+2022-10-26 17:53:15
+After months of PHP RCEs and IoT vulns, September saw a credential disclosure vulnerability in an SSL VPN shoot to the top of the list, which was a nice change for the nerd who writes these things. Learn more from @malcolmheath and Sander Vinberg. https://t.co/u4bJrKv5Tw https://t.co/bqsORMPBCG
+--------------------------------------------------
+Entidades: ['SSL VPN', 98, 105, 'Attack method']
+['Vinberg', 239, 246, 'Organization']
+Threat actor(s): 
+
+
+Item 12 de 100
+==================================================
+1585326162972409857
+dez_blanchfield
+2022-10-26 17:43:05
+@Kevin_Jackson @ATTBusiness A5: Edge computing &amp; Edge networking each create new attack vectors in their own right, requiring their own strategic design principals re. cybersecurity..
+
+#sponsored #attinfluencer #biztalks 
+#cybersecurity #security #cloud #ai #ml 
+#cloud #iot #dataprotection #datamanagement https://t.co/q4U8Vj3LlB
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 13 de 100
+==================================================
+1585287905559384065
+A10Networks
+2022-10-26 15:11:04
+Given the widespread presence of #Log4j in IoT devices, the use of the Log4j CVE to recruit botnets such as Mirai is problematic
+
+Learn how to protect against this vulnerability ▶ https://t.co/q1qKXnOtKC 
+#DDoS https://t.co/oJePrnv2lD
+--------------------------------------------------
+Entidades: ['IoT devices', 43, 54, 'Target']
+['botnets', 92, 99, 'Attack method']
+['Mirai is', 108, 116, 'Attack method']
+Threat actor(s): 
+
+
+Item 14 de 100
+==================================================
+1585281448503906308
+IT_securitynews
+2022-10-26 14:45:25
+How to navigate the current 5G and IoT threat landscape https://t.co/hQ8JzCbg7G
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 15 de 100
+==================================================
+1585261969120137216
+TechNative
+2022-10-26 13:28:00
+Electromagnetic Attack: the invisible threat to our wireless world 
+
+#military #IoT #Electromagnetic
+https://t.co/xVQ9fvsCgh
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 16 de 100
+==================================================
+1585254926430642176
+HealthISAC
+2022-10-26 13:00:01
+Navigating the Complexity of IoT Device Vulnerability: The Future State of Medical Device Security Webinar by @FiniteStateInc on Tuesday, November 1st at1 pm EST. #cybersecurity #threatintelligence #healthcaresecurity #medicaldevicesecurity https://t.co/NIgdyZ6N4Z https://t.co/VbcSUwRJBF
+--------------------------------------------------
+Entidades: ['Tuesday', 129, 136, 'Attack method']
+Threat actor(s): 
+
+
+Item 17 de 100
+==================================================
+1585782162821107712
+iot_marketing
+2022-10-27 23:55:04
+#Google ramps up #cybersecurity programs to protect users, enterprises
+
+#CybersecurityAwarenessMonth #Cyberattacks #Ransomware #Malware #DataBreaches #Hackers #Phishing #Encryption #Vulnerabilities #DataSecurity #ITSecurity #DoS #DigitalTransformation https://t.co/t6KGDuNWAf
+--------------------------------------------------
+Entidades: ['Google', 1, 7, 'Organization']
+Threat actor(s): 
+
+
+Item 18 de 100
+==================================================
+1585779374716252160
+iot_marketing
+2022-10-27 23:43:59
+New survey reveals $2 trillion market opportunity for #cybersecurity #technology and service providers
+
+#Cyberattacks #Cybercrime #Ransomware #Malware #DataBreaches #Hackers #Encryption #Vulnerabilities #DataProtection #ITSecurity #CISO #Business #DarkWeb https://t.co/RfMyuT1lsD
+--------------------------------------------------
+Entidades: ['service providers', 85, 102, 'Target']
+Threat actor(s): 
+
+
+Item 19 de 100
+==================================================
+1585779304742662144
+iot_marketing
+2022-10-27 23:43:43
+This old #malware has been rebuilt with new #features to use in #ransomware attacks
+
+#Cybersecurity #Cyberattacks #Cybercrime #Ransomware #Malware #DataBreaches #Hackers #Phishing #Encryption #Vulnerabilities  #DataSecurity #ITSecurity #Innovation #Banking https://t.co/9AcJ7pb9i4
+--------------------------------------------------
+Entidades: ['malware', 10, 17, 'Attack method']
+['ransomware', 65, 75, 'Attack method']
+Threat actor(s): 
+
+
+Item 20 de 100
+==================================================
+1587078184188534784
+SyncNI
+2022-10-31 13:45:00
+#IoT cyber security startup and automated transport specialists @AngokaCyber to demonstrate live drone attack at exclusive advanced air mobility and #CyberSecurity summit at the @KPMG Belfast office this November.
+
+@InvestNI @kpmguk @KPMG_Ireland 
+
+https://t.co/mioEJxstlL
+--------------------------------------------------
+Entidades: ['IoT cyber security', 1, 19, 'Attack method']
+Threat actor(s): 
+
+
+Item 21 de 100
+==================================================
+1587066099954229248
+SpoogemanGhost
+2022-10-31 12:56:59
+📢 Seven Data Centers blacked-out with high-power SCADA attack! 👊⚡️ At Five Megafon, MTS and RIPE DCs the 150 Kilowatt power systems were penetrated and destroyed. All are still off-line, fire possible at at least one. 🔥📵 @ITArmyUKR @DefenceU @DI_Ukraine @ZelenskyyUa #OpRussia https://t.co/D3YKpTPfmu
+--------------------------------------------------
+Entidades: ['SCADA', 49, 54, 'Target']
+['Kilowatt power systems', 109, 131, 'Target']
+Threat actor(s): 
+
+
+Item 22 de 100
+==================================================
+1587010403795898368
+blackorbird
+2022-10-31 09:15:40
+APT Operation/Group Mid-2022 Summary Report
+#Oceanlotus use tinyPortMapper forward traffic to Cobaltstrike sever , and New mips-architecture malware named "Caja" discovered on controlled devices(IOT/Linux).
+https://t.co/SVjqCUWgo0 https://t.co/9DHYRWK2Jj
+--------------------------------------------------
+Entidades: ['APT Operation/Group', 0, 19, 'Attack method']
+['Oceanlotus use tinyPortMapper', 45, 74, 'Target']
+['Cobaltstrike', 94, 106, 'Attack method']
+['malware', 141, 148, 'Attack method']
+['Linux', 199, 204, 'Organization']
+Threat actor(s): 
+OceanLotus
+
+Item 23 de 100
+==================================================
+1586998013972602880
+mirko_ross
+2022-10-31 08:26:26
+🦠#IoT #Malware increased 77% by report of #SonicWall
+
+Don't let you #IoT 7 #IIoT devices unprotected and vulnerable to #cyberattacks!
+
+@asvin_iot https://t.co/461VAXS7cW
+--------------------------------------------------
+Entidades: ['SonicWall', 43, 52, 'Organization']
+['IIoT devices', 76, 88, 'Target']
+['cyberattacks', 120, 132, 'Attack method']
+Threat actor(s): 
+
+
+Item 24 de 100
+==================================================
+1586947351876440065
+YuHelenYu
+2022-10-31 05:05:07
+2022 cyber threat report details growing trends
+236.1 million #Ransomware attempts reported in the first half of 2022; #IoT malware has increased by 77%, exceeding 12 million detections.
+https://t.co/OFyiXE39qV
+
+#CyberMonday #CybersecurityAwarenessMonth #technology #fintech https://t.co/YbH63qdd4C
+--------------------------------------------------
+Entidades: ['cyber', 5, 10, 'Attack method']
+['Ransomware', 63, 73, 'Attack method']
+['IoT malware', 120, 131, 'Attack method']
+Threat actor(s): 
+
+
+Item 25 de 100
+==================================================
+1586810369062109184
+TPxComm
+2022-10-30 20:00:48
+To avoid the increasing risk of man-in-the middle attacks, your org should keep in mind:
+🔑 Prevention is key
+🙌 Tackling the human element
+⛓️ Promoting a secure environment
+
+Learn more on how to get ahead of man-in-the-middle attacks as the #IoT expands: https://t.co/ybbpoc7LOv https://t.co/345IFtRxkQ
+--------------------------------------------------
+Entidades: ['man-in-the', 32, 42, 'Attack method']
+['your org', 59, 67, 'Target']
+['man-in-the-middle', 207, 224, 'Attack method']
+Threat actor(s): 
+
+
+Item 26 de 100
+==================================================
+1586784252485672960
+xorlogics
+2022-10-30 18:17:01
+Threat Intelligence: Combatting Cyber Crime with Artificial Intelligence
+
+#CLOUD #IOT #AI #ARTIFICIALINTELLIGENCE #DIGITAL, #CYBERSECURITY #CYBERTHREATS #HACKERS #DARKWEB #DATABREACHES #CYBERCRIME #CYBERSEC #THREATINTEL #DATAPRIVACY #CYBERINTELLIGENCE 
+
+https://t.co/xLsRn7CkbK https://t.co/1wrFQo9d9y
+--------------------------------------------------
+Entidades: ['Cyber Crime', 32, 43, 'Attack method']
+Threat actor(s): 
+
+
+Item 27 de 100
+==================================================
+1586753712332103683
+ArmisSecurity
+2022-10-30 16:15:40
+Live Webinar: OpenSSL Vulnerability Explained. Wednesday, Nov 2:11:30am EDT, 8:30am PDT, 4:30pm GMT, 5:30pm CET. Register now: https://t.co/NVViKskGAW
+
+#openssl #ssl #sslcertificate #cyberdefence #cyberawareness #cyberprotection  #armis #IOT #IT #OT #IoMT #DataHack #expertalk https://t.co/N9Rxe5L6p9
+--------------------------------------------------
+Entidades: ['Live Webinar', 0, 12, 'Attack method']
+Threat actor(s): 
+
+
+Item 28 de 100
+==================================================
+1586699472209338372
+embedded_iot
+2022-10-30 12:40:08
+As I've been saying for decades what do  you do when a crtitical vulnerability is discovered in a core security component of the IoT stack on your IoT device, devices which you have maybe 100's of thousands deployed globally?  #IoT 
+
+https://t.co/I6y7B1JxbF
+--------------------------------------------------
+Entidades: ['IoT stack', 129, 138, 'Target']
+['IoT device', 147, 157, 'Target']
+Threat actor(s): 
+
+
+Item 29 de 100
+==================================================
+1586334681863176192
+F5Labs
+2022-10-29 12:30:35
+After months of PHP RCEs and IoT vulns, September saw a credential disclosure vulnerability in an SSL VPN shoot to the top of the list, which was a nice change for the nerd who writes these things. Learn more from @malcolmheath and Sander Vinberg. https://t.co/1rkMO5Ajsn https://t.co/ZpZGLOwYqW
+--------------------------------------------------
+Entidades: ['SSL VPN', 98, 105, 'Attack method']
+Threat actor(s): 
+
+
+Item 30 de 100
+==================================================
+1586231376063381507
+ZestyThings
+2022-10-29 05:40:05
+The Internet of Things brings speed, convenience, and functionality to our lives. It also creates an almost unlimited attack surface for hackers. #Technology #CyberSecurity #Hacking #Internet #IoT
+https://t.co/0vSrS3P0Jg
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 31 de 100
+==================================================
+1586186609858322435
+threatintelctr
+2022-10-29 02:42:12
+🚨 NEW: CVE-2020-11015 🚨 A vulnerability has been disclosed in thinx-device-api IoT Device Management Server before version 2.5.0. Device MAC address can be spoofed. This means initial registration requests without ... (click for more) Severity: CRITICAL https://t.co/Fqy8E2vLT2
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 32 de 100
+==================================================
+1586148140981227520
+Social_Molly
+2022-10-29 00:09:20
+New attack can unlock and start a Tesla Model Y in seconds, say researchers: #DeepLearning #IoT #BigData CC @motorcycletwitt https://t.co/4U5YjQy4qN https://t.co/aHui9PUQV3
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 33 de 100
+==================================================
+1586145823875895300
+nanalyzetweets
+2022-10-29 00:00:08
+Iridium’s core value proposition is providing #connectivity to devices located across 80% of the world’s surface that doesn’t have cellular service. One growth area is #IoT. $IRDM
+https://t.co/P8NhAeuJqH
+--------------------------------------------------
+Entidades: ['cellular service', 131, 147, 'Target']
+Threat actor(s): 
+
+
+Item 34 de 100
+==================================================
+1586042915213791233
+JoshuaSteinman
+2022-10-28 17:11:12
+The report illustrates how MANY types of industrial equipment are vulnerable to cyber-attack.
+
+How, then, ought "Industry 4.0" companies buy down risk?
+
+The report recommends: 
+1) Intrusion Detection Systems
+2) Network Segmentation
+3) Patch Management
+
+Which are fine, but...
+
+7/
+--------------------------------------------------
+Entidades: ['industrial equipment', 41, 61, 'Target']
+['cyber-attack', 80, 92, 'Attack method']
+Threat actor(s): 
+
+
+Item 35 de 100
+==================================================
+1586024742812778496
+jamesvgingerich
+2022-10-28 15:59:00
+#Ransomware: Hackers took just three days to find this fake industrial network and fill it with malware. (ZDNet) #IIoT #Security #IoT #IoTPL #IoTCL #IoTPractioner #IoTCommunity @IoTcommunity @IoTchannel https://t.co/XUtmVx7xUU https://t.co/xJQFR2f7QM
+--------------------------------------------------
+Entidades: ['Ransomware', 1, 11, 'Attack method']
+['industrial network', 60, 78, 'Target']
+['malware', 96, 103, 'Attack method']
+['ZDNet', 106, 111, 'Organization']
+Threat actor(s): 
+
+
+Item 36 de 100
+==================================================
+1586009895706451970
+ChoiceIoT
+2022-10-28 15:00:00
+Medical devices are highly prone to #cyberattacks. The only way to secure #IoTdevices and minimize their threat to the #healthcare environment is to control their network access
+#IoT #IoMT #iotconnectivity #PrivateAPN #4G #5G #iotsim #choiceiot
+https://t.co/y6SwZzv7jy
+--------------------------------------------------
+Entidades: ['cyberattacks', 37, 49, 'Attack method']
+Threat actor(s): 
+
+
+Item 37 de 100
+==================================================
+1585993993866854401
+cpomagazine
+2022-10-28 13:56:49
+Recent report shows botnets used in #DDoS attacks are mostly located in China, U.S. and Korea while Mirai continues to be the #malware of choice. #respectdata https://t.co/aO2w6QkvFi
+--------------------------------------------------
+Entidades: ['botnets', 20, 27, 'Attack method']
+['DDoS attacks', 37, 49, 'Attack method']
+['Mirai', 100, 105, 'Organization']
+Threat actor(s): 
+
+
+Item 38 de 100
+==================================================
+1585984675864248320
+embedded_iot
+2022-10-28 13:19:47
+Thoughts @cybergibbons you know how supply-chain attacks are a big thing? And we know there are attacks against IoT devices. Do we call an IoT vectored attack a supply chain attack or is there another group term nowadays? Supply chain feels a bit like something different?
+--------------------------------------------------
+Entidades: ['IoT devices', 112, 123, 'Target']
+['supply chain', 161, 173, 'Target']
+['Supply chain', 222, 234, 'Target']
+Threat actor(s): 
+
+
+Item 39 de 100
+==================================================
+1585929440382824448
+immuniweb
+2022-10-28 09:40:18
+2022 cyber threat report details growing trends: https://t.co/GJpf7omocU #ransomware #cyberattacks #IoT
+--------------------------------------------------
+Entidades: ['cyber', 5, 10, 'Attack method']
+Threat actor(s): 
+
+
+Item 40 de 100
+==================================================
+1585916529614282752
+jamesvgingerich
+2022-10-28 08:49:00
+New botnet attack "puts other #IoT botnets to shame". (Tech Republic) #IoTPL #IoTCL  #IoTPractioner #IoTCommunity @IoTcommunity @IoTchannel https://t.co/ahDZIxekbk https://t.co/hAiV69D8QH
+--------------------------------------------------
+Entidades: ['botnets', 35, 42, 'Attack method']
+Threat actor(s): 
+
+
+Item 41 de 100
+==================================================
+1585869194494496768
+Analyticsindiam
+2022-10-28 05:40:54
+@Shutterstock vs @GettyImages : Two Different Approaches to Tackling the AI Threat
+@stanpavlovsky1 @johnrobb @parismarx 
+
+#BigData #Analytics #DataScience #AI #IoT #IIoT #Python #CloudComputing #Serverless #Linux #Programming #Coding #100DaysofCode 
+https://t.co/uZPz8nVp5i
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 42 de 100
+==================================================
+1588239486554869760
+SuriyaSubraman
+2022-11-03 18:39:36
+Malware, Ransomware, IoT Pose Major IT Security Challenges https://t.co/VTQVg3oxLt #iot #data #internetofthings
+--------------------------------------------------
+Entidades: ['Malware', 0, 7, 'Attack method']
+['Ransomware', 9, 19, 'Attack method']
+Threat actor(s): 
+
+
+Item 43 de 100
+==================================================
+1588238979790688256
+iotdomains
+2022-11-03 18:37:35
+https://t.co/tdGMXY9Axx  Malware, Ransomware, IoT Pose Major IT Security Challenges https://t.co/59OUYyau7Q
+--------------------------------------------------
+Entidades: ['https://t.co/tdGMXY9Axx', 0, 23, 'Organization']
+['Ransomware', 34, 44, 'Attack method']
+Threat actor(s): 
+
+
+Item 44 de 100
+==================================================
+1588236813730201602
+lgomezperu
+2022-11-03 18:28:59
+#Malware, #Ransomware, #IoT Pose Major IT Security Challenges - Security Boulevard https://t.co/jmNrWDJjKA
+--------------------------------------------------
+Entidades: ['Malware', 1, 8, 'Attack method']
+['Ransomware', 11, 21, 'Attack method']
+Threat actor(s): 
+
+
+Item 45 de 100
+==================================================
+1588234065869737986
+SonicWall
+2022-11-03 18:18:03
+SonicWall threat researchers recorded 82.4 million #IoT #malware attacks globally over the first three quarters of 2022—a 92% year-over-year increase. Find out more about the changing #IoT landscape: https://t.co/KGuAV77kpI #KnowTheThreats https://t.co/m0qwWDawrY
+--------------------------------------------------
+Entidades: ['SonicWall', 0, 9, 'Organization']
+Threat actor(s): 
+
+
+Item 46 de 100
+==================================================
+1588233374677843970
+securityblvd
+2022-11-03 18:15:19
+#Ransomware and #malware attacks are escalating and there is a growing need for internet-of-things (IoT) security. https://t.co/Y8Hf1JNW26 
+
+#cybersecurity #IoT
+--------------------------------------------------
+Entidades: ['Ransomware', 1, 11, 'Attack method']
+['malware', 17, 24, 'Attack method']
+Threat actor(s): 
+
+
+Item 47 de 100
+==================================================
+1588218104756461568
+campuscodi
+2022-11-03 17:14:38
+In a report yesterday, Weibu claimed that OceanLotus/APT32 (🇻🇳) operates the Torii IoT botnet, which it uses to proxy traffic for its attacks/malware.
+
+https://t.co/WSmfmceumZ
+--------------------------------------------------
+Entidades: ['malware', 142, 149, 'Attack method']
+Threat actor(s): 
+OceanLotusAPT32
+
+Item 48 de 100
+==================================================
+1588213006747717632
+Security_Sleuth
+2022-11-03 16:54:23
+Malware, Ransomware, IoT Pose Major IT Security Challenges - Security Boulevard https://t.co/1fxaG8ubDc
+--------------------------------------------------
+Entidades: ['Malware', 0, 7, 'Attack method']
+['Ransomware', 9, 19, 'Attack method']
+Threat actor(s): 
+
+
+Item 49 de 100
+==================================================
+1588185384172900355
+ReneRobichaud
+2022-11-03 15:04:37
+Malware, Ransomware, IoT Pose Major IT Security Challenges
+https://t.co/P1eUzIilC9
+
+#Infosec #Secinfo #Security #CeptBiro #Cybersecurity #Malware #Ransomware #IoT #ITSecurityChallenges
+--------------------------------------------------
+Entidades: ['Malware', 0, 7, 'Attack method']
+['Ransomware', 9, 19, 'Attack method']
+Threat actor(s): 
+
+
+Item 50 de 100
+==================================================
+1588172057246060544
+ICS_SCADA
+2022-11-03 14:11:39
+Iran still poses major cybersecurity threat to Gulf: Experts https://t.co/1vzpCS35M4
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 51 de 100
+==================================================
+1588171823518081024
+ICS_SCADA
+2022-11-03 14:10:44
+Canada Releases Latest National Cyber Threat Assessment https://t.co/6LJ7o33VUS via @OCCRP
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 52 de 100
+==================================================
+1588143849645510656
+securityblvd
+2022-11-03 12:19:34
+Malware, Ransomware, IoT Pose Major IT Security Challenges https://t.co/Y8Hf1JNW26
+--------------------------------------------------
+Entidades: ['Malware', 0, 7, 'Attack method']
+['Ransomware', 9, 19, 'Attack method']
+Threat actor(s): 
+
+
+Item 53 de 100
+==================================================
+1588142717565300738
+cipherstorm
+2022-11-03 12:15:04
+Malware, Ransomware, IoT Pose Major IT Security Challenges: More than 4 billion malware attempts were recorded globally so far in 2022, while year-to-date ransomware attempts have already exceeded full-year totals from four of the last five years. These… https://t.co/SDGLTnp4hX https://t.co/SRxG15H7Im
+--------------------------------------------------
+Entidades: ['Malware', 0, 7, 'Attack method']
+['Ransomware', 9, 19, 'Attack method']
+['malware', 80, 87, 'Attack method']
+['ransomware', 155, 165, 'Attack method']
+Threat actor(s): 
+
+
+Item 54 de 100
+==================================================
+1588119400841740288
+EC3Europol
+2022-11-03 10:42:25
+🔊The @enisa_eu 2022 #Cybersecurity Threat Landscape is out!
+
+Ransomware │ Malware │ Social engineering 
+│ Threats vs data │ Threats vs availability │ Disinformation │ Supply chain targeting
+
+🚨 New threats:
+Zero-day exploits
+Hacktivism
+DDoS attacks vs mobile networks &amp; IoT https://t.co/VPI6ja3OQc
+--------------------------------------------------
+Entidades: ['Zero-day exploits', 206, 223, 'Attack method']
+['Hacktivism', 224, 234, 'Attack method']
+['DDoS', 235, 239, 'Attack method']
+['mobile networks', 251, 266, 'Target']
+Threat actor(s): 
+
+
+Item 55 de 100
+==================================================
+1588078672585662466
+F5Labs
+2022-11-03 08:00:35
+After months of PHP RCEs and IoT vulns, September saw a credential disclosure vulnerability in an SSL VPN shoot to the top of the list, which was a nice change for the nerd who writes these things. Learn more from @malcolmheath and Sander Vinberg. https://t.co/FoAT6lT9bc https://t.co/SJoa7uYA6x
+--------------------------------------------------
+Entidades: ['SSL VPN', 98, 105, 'Attack method']
+['Vinberg', 239, 246, 'Organization']
+['https://t.co/SJoa7uYA6x', 272, 295, 'Organization']
+Threat actor(s): 
+
+
+Item 56 de 100
+==================================================
+1588048075330768896
+jamesvgingerich
+2022-11-03 05:59:00
+Hackers are targeting industrial systems with #Malware. (ars TECHNICA) #Manufacturing #CyberSecurity #IIoT #IoT #IoTPL #IoTCL #IoTPractioner #IoTCommunity @IoTcommunity @IoTchannel https://t.co/DNDwK8L2wj https://t.co/lcHV0aMQch
+--------------------------------------------------
+Entidades: ['industrial systems', 22, 40, 'Target']
+['Malware', 47, 54, 'Attack method']
+Threat actor(s): 
+
+
+Item 57 de 100
+==================================================
+1587990750046081025
+jcafesin
+2022-11-03 02:11:12
+The VIRUS Killing #Startups in #SiliconValley:
+https://t.co/Oed24usg8I 
+
+#Entrepreneurs #cybersecurity #webdev #NFTs #java #IoT #DataScience #Linux #MVP #100DaysOfCode #python #CX #Serverless #Web3 #webdev #MachineLearning #NLP #SEO #fintech #mpgvip #defstar5 #StartupIndia #gamer https://t.co/cLpHv10VMV
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 58 de 100
+==================================================
+1587988063866818565
+StephTweetChat
+2022-11-03 02:00:32
+Hidden factors of a #DataBreach include remediation, revenue loss, reputational harm, national security — even human life. https://t.co/KyHKuT4oQA
+
+#Cybersecurity #InfoSec #Security #IoT #Cyberthreats #CyberResilience #Malware #Ransomware #EmergingTech #DataPrivacy #Privacy https://t.co/jfLp0cVOUb
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 59 de 100
+==================================================
+1587925513787801601
+iot_marketing
+2022-11-02 21:51:59
+How To Stay In Control During And After A #Ransomware #Breach
+
+#Cybersecurity #Cyberattacks #Malware #SecurityBreach #Hackers #Encryption #RaaS #Vulnerabilities #DataSecurity #ITSecurity #DarkWeb #Innovation #Business #DigitalAssets #Technology https://t.co/ocxV64vKbq
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 60 de 100
+==================================================
+1587913495064219648
+iot_marketing
+2022-11-02 21:04:13
+New #Ransomware Attack Tries to Frame #Security Researchers
+
+#Cybersecurity #Cyberattacks #Cybercrime #Malware #Azov #Wiper #DataBreaches #Hackers #Encryption #Vulnerabilities #DataProtection #ITSecurity #DarkWeb #Windows #Russians #RussiaUkraineWar https://t.co/fEmbO0r4Jd
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 61 de 100
+==================================================
+1587859714154668032
+nozominetworks
+2022-11-02 17:30:31
+Threat actors often modify #malware during attacks to evade detection techniques. Fortunately, we can detect malicious servers targeting OT/IoT devices post-modification.
+
+Here, we explore the new developments so you can stay a step ahead of an adversary: https://t.co/VNNJ5eiHsr https://t.co/mjIshhFxLh
+--------------------------------------------------
+Entidades: ['malware', 28, 35, 'Attack method']
+['malicious servers', 109, 126, 'Attack method']
+['OT', 137, 139, 'Target']
+['IoT devices', 140, 151, 'Target']
+Threat actor(s): 
+
+
+Item 62 de 100
+==================================================
+1587856625481797634
+SpoogemanGhost
+2022-11-02 17:18:15
+Thank you. 🙏 I know President Biden is doing his best, and I cherism him for it. 💯 Getting power shut-off from lack of ability to keep up while in the middle of a scada power attack, is what pissed me off. We will not stop fighting, but our situation is just stupid/frustrating https://t.co/mjIibFY4V8
+--------------------------------------------------
+Entidades: ['scada power', 163, 174, 'Target']
+Threat actor(s): 
+
+
+Item 63 de 100
+==================================================
+1587842478459305984
+Securonix
+2022-11-02 16:22:02
+2022 @Securonix Threat Report identifies four areas that security teams need to address to improve their security posture: #InsiderThreats, Cloud Infrastructure, #Ransomware attacks, and #IoT and #OT attacks. Download Now! https://t.co/2hwjy5P5MZ https://t.co/3h74qtspSJ
+--------------------------------------------------
+Entidades: ['Ransomware', 163, 173, 'Attack method']
+['IoT', 188, 191, 'Target']
+['OT', 197, 199, 'Target']
+['https://t.co/2hwjy5P5MZ', 223, 246, 'Target']
+Threat actor(s): 
+
+
+Item 64 de 100
+==================================================
+1587836625949696000
+DefCampRO
+2022-11-02 15:58:46
+With one week left until DefCamp, we continue our #DefCampSpeakers series with #infosec specialists at @IxiaRomania.
+
+🎙Radu Chiscariu and 🎙Matei Radulea will teach you how to harden your sandboxes against malware evasions, while 🎙Bogdan Glazov makes an IoT firmware analysis. https://t.co/NxhjKBtYJt
+--------------------------------------------------
+Entidades: ['malware', 205, 212, 'Attack method']
+['Glazov', 237, 243, 'Organization']
+Threat actor(s): 
+
+
+Item 65 de 100
+==================================================
+1587813785641062402
+TechNative
+2022-11-02 14:28:01
+Electromagnetic Attack: the invisible threat to our wireless world 
+
+#military #IoT #Electromagnetic
+https://t.co/xVQ9fvta5P
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 66 de 100
+==================================================
+1587724681922109440
+TSTsistemas
+2022-11-02 08:33:57
+Hackers increasingly targeting Internet of Things devices - Hacking groups are turning to increasingly sophisticated methods to break into systems including new malware variants #IoT https://t.co/eqnqqK6fyw
+--------------------------------------------------
+Entidades: ['of Things devices', 40, 57, 'Target']
+['malware', 161, 168, 'Attack method']
+['IoT https://t.co/eqnqqK6fyw', 179, 206, 'Target']
+Threat actor(s): 
+
+
+Item 67 de 100
+==================================================
+1587716336867835904
+BridgeworksLtd
+2022-11-02 08:00:47
+With #edgecomputing, there is an increased number of attack points open to #cyberattacks
+
+https://t.co/Pn6GRDQHQi
+
+#WAN #WANAcceleration #SDWAN #CloudComputing #Network #IoT #DigitalTransformation #DigitalAssets https://t.co/eBSJky00Ka
+--------------------------------------------------
+Entidades: ['cyberattacks', 76, 88, 'Attack method']
+Threat actor(s): 
+
+
+Item 68 de 100
+==================================================
+1587668323583623168
+SonicWall
+2022-11-02 04:50:00
+Using new threat data from the SonicWall Capture Labs threat research team, @connectedremag explores the rise of #IoT #malware attacks and how the need to deploy secure, private #wireless networks has never been greater to prevent #cyberattacks. https://t.co/6v9Glgbye9
+--------------------------------------------------
+Entidades: ['SonicWall', 31, 40, 'Organization']
+['wireless networks', 179, 196, 'Target']
+['cyberattacks', 232, 244, 'Attack method']
+Threat actor(s): 
+
+
+Item 69 de 100
+==================================================
+1587665615858569216
+CZDS
+2022-11-02 04:39:14
+new study says that 2FAs are not safe and are being hacked with no intervention from the user. The attack is known as "Man-in-the-Middle".
+ - Screen Rant #cybersecurity #ioT  https://t.co/y9M3OIwVFz
+--------------------------------------------------
+Entidades: ['2FAs are', 20, 28, 'Attack method']
+['no intervention', 64, 79, 'Attack method']
+['Man-in-the-Middle', 119, 136, 'Attack method']
+Threat actor(s): 
+
+
+Item 70 de 100
+==================================================
+1587520067750748160
+ArmisSecurity
+2022-11-01 19:00:53
+OpenSSL new patch update! Protect against potential vulnerability with v3.0.7. Find out more at the Armis live webinar.
+Register here: https://t.co/9cdk3PNADX 
+
+#openssl #ssl #sslcertificate #cyberdefence #cyberawareness #cyberprotection #armis #cybersecurity #IOT #IT #OT #IoMT https://t.co/Pb19VANSR4
+--------------------------------------------------
+Entidades: ['OpenSSL', 0, 7, 'Organization']
+['v3.0.7', 71, 77, 'Target']
+Threat actor(s): 
+
+
+Item 71 de 100
+==================================================
+1587479610811351044
+SANSOffensive
+2022-11-01 16:20:07
+🛡️ The SANS #SANSHackFest begins Nov 14 - 15 in Arlington, VA, or Live Online!
+
+🗣Featured Experts: @livingbeef, Founder, Wild Pointer
+👏 Presentation: Explore 3 of the wildest IoT attack stories that happened last year.
+
+🎯 Secure your spot today: https://t.co/e9sqNlPykl https://t.co/v2kEwhRQ86
+--------------------------------------------------
+Entidades: ['VA', 59, 61, 'Target']
+Threat actor(s): 
+
+
+Item 72 de 100
+==================================================
+1587428995636891650
+jamesvgingerich
+2022-11-01 12:59:00
+Hard-coded key vulnerability in Logix PLCs has severity score of 10 out of 10. (ars TECHNICA) #IIoT #Industry40 #CyberSecurity #IoT #IoTPL #IoTCL #IoTPractioner #IoTCommunity  @IoTcommunity @IoTchannel  https://t.co/38WbEFvmH4 https://t.co/1WAOljLbqV
+--------------------------------------------------
+Entidades: ['Hard-coded', 0, 10, 'Attack method']
+['PLCs', 38, 42, 'Target']
+Threat actor(s): 
+
+
+Item 73 de 100
+==================================================
+1587410373170237440
+HealthISAC
+2022-11-01 11:45:00
+TODAY AT 1 PM ET!
+Navigating the Complexity of IoT Device Vulnerability: The Future State of Medical Device Security Webinar by @FiniteStateInc #productsecurity #cybersecurity #threatintelligence #healthcaresecurity #supplychainsecurity
+https://t.co/7pgQwtNiSv https://t.co/TkGq2MgE0l
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 74 de 100
+==================================================
+1587381180772413440
+jamesvgingerich
+2022-11-01 09:49:00
+You Should Probably Stop Using Your @WyzeCam Camera Right Now!  (Gizmodo) #CyberSecurty #IoT #Vulnerability #IoTPL #IoTCL #IoTPractioner #IoTCommunity @IoTcommunity @IoTchannel https://t.co/yBVNxasx7n https://t.co/3977Pj83zZ
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 75 de 100
+==================================================
+1587180835794407424
+ArmisSecurity
+2022-10-31 20:32:54
+Hurry! Time is ticking on a new OpenSSL vulnerability patch!
+Register for the live webinar now:
+https://t.co/MHNvASTNn9
+#openssl #ssl #sslcertificate #cyberdefence #cyberawareness #cyberprotection #tls #armis #cybersecurity #IOT #IT #OT #IoMT https://t.co/7YVdkw5HCS
+--------------------------------------------------
+Entidades: ['OpenSSL vulnerability', 32, 53, 'Attack method']
+Threat actor(s): 
+
+
+Item 76 de 100
+==================================================
+1587160987735556098
+RealOpenSystems
+2022-10-31 19:14:02
+Cybersecurity is a team sport🏈 Is your team letting small fumbles increase your security threat risk? Read Andre van der Walt’s new post on some of the risks to your IT environment 👉 https://t.co/P3pGgfUNgZ
+ 
+#CyberSecurityAwarenessMonth #mdr #IoT #MicrosoftSecurity
+--------------------------------------------------
+Entidades: ['Cybersecurity', 0, 13, 'Organization']
+['Walt', 121, 125, 'Organization']
+Threat actor(s): 
+
+
+Item 77 de 100
+==================================================
+1588281713217544192
+ICS_SCADA
+2022-11-03 21:27:23
+Danish train standstill on Saturday result of a hacker attack on an IT subcontractor's software testing environment &gt;&gt;&gt;&gt;  https://t.co/Ut6j7S5cyI
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 78 de 100
+==================================================
+1588274839160250368
+Sec_Cyber
+2022-11-03 21:00:05
+Malware, #Ransomware, IoT Pose Major IT Security Challenges https://t.co/WzKZGsU1d3
+--------------------------------------------------
+Entidades: ['Malware', 0, 7, 'Attack method']
+['Ransomware', 10, 20, 'Attack method']
+Threat actor(s): 
+
+
+Item 79 de 100
+==================================================
+1588537298794291206
+HealthISAC
+2022-11-04 14:23:00
+From Health-ISAC's Daily Cyber Headlines: Healthcare interconnectedness means security practitioners are tasked with juggling IT, OT, IoT, and #IoMT devices amid a volatile cyber threat landscape. https://t.co/e3bqZBjaue #connectedhealth #riskmanagement #healthsystems https://t.co/bLIBW53GDG
+--------------------------------------------------
+Entidades: ["ISAC's", 12, 18, 'Organization']
+['OT', 130, 132, 'Target']
+['IoMT devices', 144, 156, 'Target']
+['cyber threat', 173, 185, 'Attack method']
+Threat actor(s): 
+
+
+Item 80 de 100
+==================================================
+1588502040627511296
+nozominetworks
+2022-11-04 12:02:54
+✈️ Our team had a great time this week in Orlando meeting everyone at the #AviationISAC conference! We enjoyed our conversations about why real-time asset visibility &amp; anomaly/threat detection is critical to maintaining OT/IoT cyber resiliency.
+
+#AviationCybersecurity #OTSecurity https://t.co/ojTansn1ob
+--------------------------------------------------
+Entidades: ['OT', 224, 226, 'Target']
+['cyber', 231, 236, 'Attack method']
+Threat actor(s): 
+
+
+Item 81 de 100
+==================================================
+1588404962052251649
+ExpComputer
+2022-11-04 05:37:08
+.@barracuda XDR Insight Reveals Threat Severity Rises During Vacation Month - https://t.co/xxjkUNw95z | #technews #technology #futuretech #AI #ML #RPA #IoT #IT #Cloud #security
+--------------------------------------------------
+Entidades: ['.@barracuda', 0, 11, 'Organization']
+Threat actor(s): 
+
+
+Item 82 de 100
+==================================================
+1588372167493910528
+GlenGilmore
+2022-11-04 03:26:49
+#EV Startup Wants to Save You From a #HeartAttack 💓 Bloomberg 
+
+#Healthcare Detection: #autonomous driving system takes over and shepherds vehicle to safety. Virtual doctors can check in on the patient via 🚘 cockpit 📺 
+
+https://t.co/djEu4B5Tpq #TechForGood #HealthTech #AI #IoT https://t.co/fH5ODrdqbw
+--------------------------------------------------
+Entidades: ['EV Startup', 1, 11, 'Target']
+Threat actor(s): 
+
+
+Item 83 de 100
+==================================================
+1588362647933784064
+jamesvgingerich
+2022-11-04 02:49:00
+Chinese #IoT: The Threat Ignored by UK Politicians. (IoT For All) #IoTPL #IoTCL #IoTPractioner #IoTCommunity @IoTcommunity @IoTchannel https://t.co/WoKkJEOQC2 https://t.co/G6mUk9wBCx
+--------------------------------------------------
+Entidades: ['UK Politicians', 36, 50, 'Organization']
+Threat actor(s): 
+
+
+Item 84 de 100
+==================================================
+1588298247084179457
+DrBridgetHarris
+2022-11-03 22:33:05
+On #TechAbuse and #IoT, @leotanczt @uclcs outlines how the #InternetOfThings can be weaponised
+
+&amp; recommends a detailed threat modelling of #IPV intimate partner violence risks that recognises how tech functionalities may be abused in domestic contexts, and tech responsibilities
+--------------------------------------------------
+Entidades: ['IoT', 19, 22, 'Target']
+['InternetOfThings', 60, 76, 'Target']
+Threat actor(s): 
+
+
+Item 85 de 100
+==================================================
+1588881865439875077
+RedingtonValue
+2022-11-05 13:12:11
+Over 80% of #organizations have implemented the Internet of Things (IoT), and almost 20% of organizations have detected an #IoT-based #attack in the past three years.
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 86 de 100
+==================================================
+1588770334043508737
+jamesvgingerich
+2022-11-05 05:49:00
+Silex' Malware Renders #InternetOfThings Devices Useless. Here's How to Prevent It. (Fortune) #IoT #IoTPL #IoTCL  #IoTPractioner #IoTCommunity  @IoTcommunity @IoTchannel #Security  https://t.co/epowxz2tL2  https://t.co/FgLCL4sJ7l
+--------------------------------------------------
+Entidades: ["Silex' Malware", 0, 14, 'Attack method']
+['InternetOfThings Devices', 24, 48, 'Target']
+['Fortune', 85, 92, 'Organization']
+Threat actor(s): 
+
+
+Item 87 de 100
+==================================================
+1588635376209776640
+TheHidingGhost
+2022-11-04 20:52:43
+@blob_watcher If they’re gonna use one, they may as well launch a massive conventional strike + destructive cyber attack on NATO targets too, IOT prevent an immediate intervention.
+Afterword, wait and see b/c the only possible level of escalation left is strategic conflict &amp; then negotiate.
+--------------------------------------------------
+Entidades: ['@blob_watcher', 0, 13, 'Organization']
+['cyber attack', 108, 120, 'Attack method']
+['IOT', 142, 145, 'Target']
+Threat actor(s): 
+
+
+Item 88 de 100
+==================================================
+1588624650292015104
+ext_noc
+2022-11-04 20:10:06
+The report pointed out that IoT devices have multiple ways to connect to a network, offering multiple attack vectors to exploit—IoT malware climbed 92% globally, according to the study.  #IoT #mangedIoT #ransomattack
+--------------------------------------------------
+Entidades: ['IoT devices', 28, 39, 'Target']
+Threat actor(s): 
+
+
+Item 89 de 100
+==================================================
+1588617628142166018
+threatintelctr
+2022-11-04 19:42:12
+🚨 NEW: CVE-2022-34020 🚨 Cross Site Request Forgery (CSRF) vulnerability in ResIOT ResIOT IOT Platform + LoRaWAN Network Server through 4.1.1000114 allows attackers to add new admin users to the platform or other un... (click for more) Severity: HIGH https://t.co/ILYN4RbAx1
+--------------------------------------------------
+Entidades: ['Cross Site', 24, 34, 'Attack method']
+['4.1.1000114 allows', 135, 153, 'Target']
+Threat actor(s): 
+
+
+Item 90 de 100
+==================================================
+1588606436736729088
+bartgrover
+2022-11-04 18:57:44
+Train operator DSB said on Thursday that a major breakdown of Denmark’s train network during the weekend was the result of a cyber attack #hacking #cyberattack #IoT #iotsecurity #icscybersecurity #scada #cybersecurity #infosec #cyb…https://t.co/gB4zLY1fci https://t.co/vMdYvnTk9J
+--------------------------------------------------
+Entidades: ['Denmark’s', 62, 71, 'Target']
+['cyber attack', 125, 137, 'Attack method']
+Threat actor(s): 
+
+
+Item 91 de 100
+==================================================
+1588534991931453442
+XSL_Labs_CM
+2022-11-04 14:13:50
+Cyber Attack Literacy Statistics 💥
+
+3⃣0⃣ 64% of Americans haven’t checked to see if they’ve been impacted by a data breach.
+
+3⃣1⃣ After a breach, 56% of Americans don’t know what to do.
+
+3⃣2⃣ Half of companies with IoT devices on their networks don’t adequately secure them.
+--------------------------------------------------
+Entidades: ['Cyber Attack', 0, 12, 'Attack method']
+['data breach', 111, 122, 'Attack method']
+['of companies with', 197, 214, 'Target']
+['IoT devices', 215, 226, 'Target']
+['their networks', 230, 244, 'Target']
+Threat actor(s): 
+
+
+Item 92 de 100
+==================================================
+1588373767742423040
+RS_Preprints
+2022-11-04 03:33:11
+A study on IDS system based on Hedge Algebras to detect DDOS attack in IoT systems #preprints https://t.co/d2khmByRDd
+--------------------------------------------------
+Entidades: ['IDS system', 11, 21, 'Target']
+['DDOS attack', 56, 67, 'Attack method']
+['IoT systems', 71, 82, 'Target']
+Threat actor(s): 
+
+
+Item 93 de 100
+==================================================
+1587992460730376192
+Grepnetics
+2022-11-03 02:18:00
+The VIRUS Killing #Startups in #SiliconValley:
+https://t.co/LF5BaMX0pB 
+
+#Entrepreneurs #cybersecurity #webdev #NFTs #java #IoT #DataScience #Linux #MVP #100DaysOfCode #python #CX #Serverless #Web3 #webdev #MachineLearning #NLP #SEO #fintech #mpgvip #defstar5 #StartupIndia #game
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 94 de 100
+==================================================
+1589412716649009154
+SuriyaSubraman
+2022-11-07 00:21:36
+Announcing Quantum IoT Protect: Autonomous IoT Cyber Attack Prevention - BrightTALK https://t.co/ap285230ts #iot #data #internetofthings
+--------------------------------------------------
+Entidades: ['BrightTALK', 73, 83, 'Target']
+Threat actor(s): 
+
+
+Item 95 de 100
+==================================================
+1589320748124233729
+royalhansen
+2022-11-06 18:16:09
+"Entities like @Google and the @WhiteHouse are looking at labeling as a step toward hardening IoT devices against threat actors."
+https://t.co/jBenJ3o2t1
+--------------------------------------------------
+Entidades: ['IoT devices', 94, 105, 'Target']
+Threat actor(s): 
+
+
+Item 96 de 100
+==================================================
+1589307457876406273
+ArceoChoya
+2022-11-06 17:23:20
+The WiFi Coconut is a router’s evil twin: #artificialintelligence #iot CC @motorcycletwitt https://t.co/HK139STBq0 https://t.co/vPmr8SC1YA
+--------------------------------------------------
+Entidades: ['WiFi', 4, 8, 'Target']
+Threat actor(s): 
+
+
+Item 97 de 100
+==================================================
+1589263964222939137
+Myticas
+2022-11-06 14:30:30
+How to navigate the current 5G and IoT threat landscape via @techrepublic
+https://t.co/1bBvKGNM3c
+#AI #5G
+--------------------------------------------------
+Entidades: Threat actor(s): 
+
+
+Item 98 de 100
+==================================================
+1589158433315377153
+CyberSecDN
+2022-11-06 07:31:10
+Malware, #Ransomware, IoT Pose Major IT Security Challenges https://t.co/w7ZAHg4XtL #Sec_Cyber
+--------------------------------------------------
+Entidades: ['Malware', 0, 7, 'Attack method']
+['Ransomware', 10, 20, 'Attack method']
+Threat actor(s): 
+
+
+Item 99 de 100
+==================================================
+1589060037447716865
+nanalyzetweets
+2022-11-06 01:00:10
+We look at how the 4,408 satellite constellation from #Starlink might represent a threat to Iridium’s #IoT connectivity solutions.
+https://t.co/P8NhAeuJqH
+--------------------------------------------------
+Entidades: ['IoT connectivity solutions', 103, 129, 'Target']
+Threat actor(s): 
+

@@ -1,0 +1,26 @@
+ℹ Saving to output directory: G:\Meu Drive\TCC\TCC II - Everson
+Leonardi\Projeto\Dados\Spacy\models
+ℹ Using CPU
+[1m
+=========================== Initializing pipeline ===========================[0m
+✔ Initialized pipeline
+[1m
+============================= Training pipeline =============================[0m
+ℹ Pipeline: ['tok2vec', 'ner']
+ℹ Initial learn rate: 0.001
+E    #       LOSS TOK2VEC  LOSS NER  ENTS_F  ENTS_P  ENTS_R  SCORE 
+---  ------  ------------  --------  ------  ------  ------  ------
+  0       0          0.00     45.06    0.00    0.00    0.00    0.00
+  3     200         61.98   1933.90   44.00   51.56   38.37    0.44
+  6     400         55.67    930.73   54.44   55.42   53.49    0.54
+ 11     600         69.90    597.90   64.00   62.92   65.12    0.64
+ 17     800         63.83    398.99   54.55   48.21   62.79    0.55
+ 25    1000         53.74    290.22   62.63   55.36   72.09    0.63
+ 34    1200         65.72    253.86   60.87   57.14   65.12    0.61
+ 46    1400        116.57    322.74   57.61   54.08   61.63    0.58
+ 60    1600         60.64    271.32   58.70   55.10   62.79    0.59
+ 77    1800         41.96    270.06   57.78   55.32   60.47    0.58
+ 98    2000         44.97    297.10   60.64   55.88   66.28    0.61
+124    2200         66.64    354.93   53.81   47.75   61.63    0.54
+✔ Saved pipeline to output directory
+G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\models\model-last
