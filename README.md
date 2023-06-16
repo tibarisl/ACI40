@@ -1,7 +1,5 @@
 # ACI40
 
-O repositório ACI40: Armazenamento de Códigos do Projeto de TCC
-
 O repositório ACI40 foi criado para armazenar os códigos relacionados ao meu projeto de Trabalho de Conclusão de Curso (TCC) no curso de Sistemas de Informação. O objetivo principal desse trabalho é identificar e analisar ameaças cibernéticas no contexto da Indústria 4.0, utilizando técnicas de machine learning.
 
 Os códigos presentes neste repositório foram desenvolvidos utilizando diversas ferramentas e tecnologias, como o Spacy, Tweepy e a linguagem de programação Python. Além disso, a plataforma Doccano foi utilizada para realizar a rotulagem dos dados, essencial para treinar e avaliar os modelos de machine learning.
