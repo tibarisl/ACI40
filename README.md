@@ -9,4 +9,4 @@ Os códigos presentes neste repositório foram desenvolvidos utilizando diversas
 
 Fique à vontade para navegar pelo repositório ACI40 e utilizar os códigos de acordo com suas necessidades. Tenha em mente que esses códigos foram desenvolvidos especificamente para o meu projeto de TCC, com o objetivo de identificar ameaças cibernéticas no contexto da Indústria 4.0. Eles podem não ser adequados para outros contextos ou aplicações.
 
-Caso surjam dúvidas ou sugestões, sinta-se à vontade para entrar em contato. Agradeço pelo seu interesse e espero que o repositório ACI40 seja útil para sua pesquisa ou aprendizado! aprendizado!
+Caso surjam dúvidas ou sugestões, sinta-se à vontade para entrar em contato. Agradeço pelo seu interesse e espero que o repositório ACI40 seja útil para sua pesquisa ou aprendizado!
