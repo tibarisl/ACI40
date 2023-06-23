@@ -27,3 +27,4 @@ E    #       LOSS TOK2VEC  LOSS NER  ENTS_F  ENTS_P  ENTS_R  SCORE
 226    2800         13.55    202.94   60.00   65.06   55.67    0.60
 ✔ Saved pipeline to output directory
 G:\Meu Drive\TCC\TCC II - Everson Leonardi\Projeto\Dados\Spacy\models\model-last
+ 

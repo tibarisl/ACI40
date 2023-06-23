@@ -35,3 +35,4 @@ E    #       LOSS TOK2VEC  LOSS NER  ENTS_F  ENTS_P  ENTS_R  SCORE
 492    4400       1109.48    429.41   61.86   60.00   63.83    0.62
 ✔ Saved pipeline to output directory
 GMeu DriveTCCTCC II - Everson LeonardiProjetoDadosSpacymodelsmodel-last
+ 

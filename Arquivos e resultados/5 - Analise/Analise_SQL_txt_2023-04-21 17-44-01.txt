@@ -2768,7 +2768,6 @@ At #Version2dk #CyberSecurity conf &amp; expo in Copenhagen with #IBM, #Arrow, #
 Entidades: ['IBM', 66, 69, 'Target']
 ['Arrow', 72, 77, 'Threat Actor']
 ['Fortinet', 80, 88, 'Target']
-['Siscon', 91, 97, 'Threat Actor']
 Threat actor(s): 
 
 
@@ -17002,7 +17001,6 @@ https://t.co/vsRDsUstAc
 --------------------------------------------------
 Entidades: ['FinTech Startups', 74, 90, 'Target']
 ['businessblockchain', 168, 186, 'Threat Actor']
-['https://t.co/vsRDsUstAc', 204, 227, 'Threat Actor']
 Threat actor(s): 
 
 
@@ -18901,7 +18899,6 @@ Read: https://t.co/BBiQZCJjmq
 #Security #IoT #Vulnerability #Surveillance #InfoSec
 --------------------------------------------------
 Entidades: ['HackRead', 0, 8, 'Threat Actor']
-['Enabot', 40, 46, 'Threat Actor']
 Threat actor(s): 
 
 
@@ -47332,7 +47329,6 @@ The Best Password Managers to Secure Your Digital Life.
 👉https://t.co/wLHYgvGLoK https://t.co/x4k3WPRK8I
 --------------------------------------------------
 Entidades: ['Bigdata', 236, 243, 'Threat Actor']
-['https://t.co/wLHYgvGLoK', 247, 270, 'Threat Actor']
 Threat actor(s): 
 
 
