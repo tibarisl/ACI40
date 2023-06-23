@@ -15,11 +15,8 @@ analise.analisar_posts_SQL(num_posts=5000)
 #    print("##### Criando modelo de número:" + str(i))
 #    analise.criar_modelo(resultNumber=12)
 
-# Gera o modelo com 0.99 - Modificado diretamente na função generate_training_file
+# Gera o modelo com 0.99 -- Modificado diretamente na função generate_training_file
 #analise.gerar_arquivo_treino(sampleNumber=12)
 #analise.criar_modelo(resultNumber=12)
 #analise.analise_Manual_posts_SQL(100)
-
-
-
 
